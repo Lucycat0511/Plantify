@@ -2,11 +2,11 @@ import { Outlet } from "react-router-dom";
 
 function App({ cartCount }) {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col">
       <header>
         <div>
-          <div className="flex mx-4 md:mx-12 py-2 items-center">
-            <h1 className="flex-1 text-xl md:text-2xl">Plantify</h1>
+          <div className="flex mx-4 md:mx-8 py-4 items-center">
+            <h1 className="flex-1 text-xl md:text-3xl">Plantify</h1>
             <div className="flex gap-4 md:gap-12 text-sm">
               <button className="flex-col hidden lg:flex">
                 <span className="font-medium">Store Locator</span>
@@ -38,8 +38,23 @@ function App({ cartCount }) {
             </div>
           </div>
           <div className="flex">
-            <button className="flex-1 border">Shop</button>
-            <button className="flex-1 border">Resources</button>
+            <div className="flex flex-1 lg:hidden">
+              <button className="flex-1 border py-2">Shop</button>
+              <button className="flex-1 border py-2">Resources</button>
+            </div>
+            <div
+              className="hidden flex-1 lg:flex
+            px-12 py-2 justify-center gap-8 border text-sm"
+            >
+              <button>Deals</button>
+              <button>Stores</button>
+              <button>Plants</button>
+              <button>Planters</button>
+              <button>Plant Care</button>
+              <button>Gift Ideas</button>
+              <button>Subscriptions</button>
+              <button>Workshops</button>
+            </div>
           </div>
         </div>
         <div className="hidden">
