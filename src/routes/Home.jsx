@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4">
-      <section hero className=" bg-sky-50 flex flex-col md:flex-row-reverse">
+    <div className="flex flex-col">
+      <section className=" bg-sky-50 flex flex-col md:flex-row-reverse">
         <img
           className="object-cover md:w-1/2"
           src="/assets/landing.png"
@@ -20,8 +20,48 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>Testimonials</section>
-      <section>Shop by Collection</section>
+      <section className="bg-[#FCF9F3] flex flex-col items-center text-lg py-2">
+        <h2>What People Are Saying</h2>
+        <img className="md:max-w-3xl" src="/assets/testimonials.gif" />
+      </section>
+      <section className="p-12 flex flex-col gap-4">
+        <h2 className="text-[2rem]">Shop by Collection</h2>
+        <div className="grid grid-flow-row grid-cols-3 md:grid-cols-6 gap-8 text-xs font-medium">
+          <div>
+            <img src="/assets/collections/all.png" alt="plant collection" />
+            <p className="mt-4">All Plants & Trees</p>
+          </div>
+          <div>
+            <img src="/assets/collections/pets.png" alt="plant collection" />
+            <p className="mt-4">Pet-Friendly Plants</p>
+          </div>
+          <div>
+            <img src="/assets/collections/decor.png" alt="plant collection" />
+            <p className="mt-4">Decor Planters</p>
+          </div>
+          <div>
+            <img
+              src="/assets/collections/beginner.png"
+              alt="plant collection"
+            />
+            <p className="mt-4">For Beginners</p>
+          </div>
+          <div>
+            <img
+              src="/assets/collections/flowering.png"
+              alt="plant collection"
+            />
+            <p className="mt-4">Flowering Plants</p>
+          </div>
+          <div>
+            <img
+              src="/assets/collections/flowering.png"
+              alt="plant collection"
+            />
+            <p className="mt-4">Bonsai</p>
+          </div>
+        </div>
+      </section>
       <section>New Arrivals</section>
       <section>Best Sellers</section>
       <section>
