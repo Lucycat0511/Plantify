@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function App({ cartCount }) {
   return (
@@ -70,14 +70,30 @@ function App({ cartCount }) {
         <Outlet />
       </main>
 
-      <footer>
-        <div>
-          <div>Find your local store</div>
+      <footer className="bg-[#F9F8F7]">
+        <section>
+          <div className="flex gap-6">
+            <img
+              className="w-32 md:w-40"
+              src="assets/footerstore.png"
+              alt="store image"
+            />
+            <div className="flex flex-col gap-4">
+              <h3 className="text-2xl">Visit Us In A Store Near You</h3>
+              <Link>
+                <p className="group hover:text-emerald-500 hover:italic font-semibold">
+                  Find Your Local Store
+                  <i className="fa-solid fa-arrow-right-long ml-4 group-hover:ml-6 ease-in-out duration-75"></i>
+                </p>
+              </Link>
+            </div>
+          </div>
+
           <div>Subscribe to email list</div>
           <ul>Social Media Links</ul>
           <div>Resource Tabs</div>
-        </div>
-        <div>copyright</div>
+          <div>copyright</div>
+        </section>
       </footer>
     </div>
   );

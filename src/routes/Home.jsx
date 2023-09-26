@@ -103,11 +103,46 @@ export default function Home() {
       <section>
         <FeatureContainer title="Bonsai" />
       </section>
-      <section>
-        Highlight Features
-        <div>Free Shipping</div>
-        <div>30 Day Happiness Guarantee</div>
-        <div>Local Store Fronts</div>
+      <section className="flex gap-4 lg:gap-40">
+        <div className="flex flex-col gap-8">
+          <img
+            className="w-16 lg:w-20"
+            src="assets/highlights/freeshipping.svg"
+            alt="free shipping"
+          />
+          <h3 className="text-2xl">Free Standard Shipping</h3>
+          <p>
+            Enjoy free standard shipping on all plants and planters. Orders are
+            shipped via UPS carbon neutral shipping, keeping our carbon
+            footprint as small as possible.
+          </p>
+        </div>
+        <div className="flex flex-col gap-8">
+          <img
+            className="w-16 lg:w-20"
+            src="assets/highlights/30day.svg"
+            alt="30-day"
+          />
+          <h3 className="text-2xl">30-Day Customer Happiness Guarantee</h3>
+          <p>
+            Our team preps, prunes, & carefully packs every order—meaning lots
+            of care goes into every step. If your plant arrives damaged or
+            unhealthy, we replace it for free.
+          </p>
+        </div>
+        <div className="flex flex-col gap-8">
+          <img
+            className="w-16 lg:w-20"
+            src="assets/highlights/local.svg"
+            alt="local stores"
+          />
+          <h3 className="text-2xl">Local Stores</h3>
+          <p>
+            Want hands-on plant expertise IRL? Stop by one of our stores in NYC,
+            Bethesda, Chicago, or San Francisco to explore more plants,
+            planters, & care accessories.
+          </p>
+        </div>
       </section>
     </div>
   );
