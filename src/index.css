@@ -19,5 +19,6 @@ section {
 footer {
   background-image: url("assets/footerleaf.png");
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 100% 0;
+  background-size: 20%;
 }
